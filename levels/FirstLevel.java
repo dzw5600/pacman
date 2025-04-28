@@ -16,6 +16,7 @@ public class FirstLevel implements KeyListener
 
     public static JPanel getPanel()
     {
+        gamePanel.setBackground(Color.BLACK);
         return gamePanel;
     }
 
@@ -41,6 +42,9 @@ public class FirstLevel implements KeyListener
         int imageX = (gamePanel.getWidth() - backgroundImage.getWidth())/2;
         int imageY = (gamePanel.getHeight() - backgroundImage.getHeight())/2;
         g.drawImage(backgroundImage, imageX, imageY, null);
+
+        g.setColor(Color.YELLOW);
+        g.fillRect(50, 216, 14, 14);
     }
 
 
@@ -50,6 +54,11 @@ public class FirstLevel implements KeyListener
 
     @Override
     public void keyPressed(KeyEvent e) {
+//        int keyCode = e.getKeyCode();
+//        if (keyCode == KeyEvent.VK_LEFT && playerX > 0) {
+//            playerX -= PLAYER_SPEED;
+//        } else if (keyCode == KeyEvent.VK_RIGHT && playerX < WIDTH - PLAYER_WIDTH) {
+//            playerX += PLAYER_SPEED;
 
     }
 
